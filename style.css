@@ -140,28 +140,42 @@ body {
 .github-button {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background-color: #24292e;
+  gap: 8px;
+  background-color: #2b3137;
   color: white;
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.2s ease;
   margin-bottom: 30px;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04);
-}
-
-.github-button:hover {
-  background-color: #2c3236;
-  border-color: rgba(27, 31, 35, 0.35);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  border: 1px solid #444c56;
 }
 
 .github-button i {
-  font-size: 1.2rem;
+  font-size: 18px;
+  color: white;
+}
+
+.github-button .github-label {
+  color: white;
+  font-weight: 600;
+}
+
+.github-button .separator {
+  color: #6e7681;
+  margin: 0 4px;
+}
+
+.github-button .github-action {
+  color: #58a6ff;
+  font-weight: 500;
+}
+
+.github-button:hover {
+  background-color: #373e47;
+  border-color: #58a6ff;
 }
 
 .project-details {
@@ -194,6 +208,112 @@ body {
   text-decoration: underline;
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.tech-badge {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #1e293b;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #c7d2fe;
+  letter-spacing: 0.3px;
+}
+
+.tech-badge:hover {
+  background: #c7d2fe;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  color: #1e293b;
+  border-color: #a5b4fc;
+}
+
+.tech-details {
+  margin: 25px 0;
+}
+
+.tech-item {
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  border-left-color: #764ba2;
+}
+
+.tech-item h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.tech-item strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.architecture-diagram {
+  margin: 25px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.architecture-diagram img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  background: white;
+  padding: 15px;
+}
+
+.diagram-caption {
+  text-align: center;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
 .project-images {
   display: flex;
   gap: 20px;
@@ -207,6 +327,92 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Architecture Flow Diagram */
+.architecture-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 100px;
+}
+
+.flow-icon {
+  font-size: 2.5rem;
+  background: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.flow-icon i {
+  font-size: 1.8rem;
+  color: #e74c3c;
+}
+
+.flow-icon i.fa-file-pdf {
+  color: #95a5a6;
+}
+
+.flow-icon i.fa-cut {
+  color: #e74c3c;
+}
+
+.flow-icon i.fa-th {
+  color: #3498db;
+}
+
+.flow-icon i.fa-save {
+  color: #9b59b6;
+}
+
+.flow-icon i.fa-question {
+  color: #e74c3c;
+}
+
+.flow-icon i.fa-search {
+  color: #3498db;
+}
+
+.flow-icon i.fa-robot {
+  color: #e67e22;
+}
+
+.flow-icon i.fa-comment {
+  color: #bdc3c7;
+}
+
+.flow-label {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flow-arrow {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -255,5 +461,40 @@ body {
 
   .project-images {
     flex-direction: column;
+  }
+
+  .architecture-flow {
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .flow-step {
+    min-width: 80px;
+  }
+
+  .flow-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .flow-label {
+    font-size: 0.8rem;
+  }
+
+  .flow-arrow {
+    font-size: 1.5rem;
+  }
+
+  .tech-item {
+    padding: 15px;
+  }
+
+  .tech-item h5 {
+    font-size: 1rem;
+  }
+
+  .tech-item p {
+    font-size: 0.9rem;
   }
 }
