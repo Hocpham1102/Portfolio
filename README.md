@@ -89,6 +89,7 @@ Copy và paste phần `<div class="project">` để thêm projects mới.
 ### GitHub Pages (Miễn phí)
 
 **Bước 1:** Push code lên GitHub repository
+
 ```bash
 git add .
 git commit -m "Update portfolio"
@@ -96,6 +97,7 @@ git push origin main
 ```
 
 **Bước 2:** Enable GitHub Pages
+
 1. Truy cập repository: https://github.com/Hocpham1102/Portfolio
 2. Click tab **Settings** ⚙️
 3. Sidebar bên trái → Click **Pages**
@@ -106,10 +108,12 @@ git push origin main
 6. Click **Save**
 
 **Bước 3:** Đợi deployment (1-2 phút)
+
 - GitHub sẽ tự động build
 - Website live tại: **https://hocpham1102.github.io/Portfolio/**
 
 **Bước 4:** Kiểm tra
+
 - Truy cập URL trên để xem website live
 - Test tất cả links, hình ảnh, và PDF
 
