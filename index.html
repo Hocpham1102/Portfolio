@@ -59,17 +59,17 @@
           <h2 class="section-title">AI & Machine Learning Projects</h2>
 
           <div class="project">
-            <h3 class="project-title">RAG System - Chat với Tài Liệu PDF</h3>
+            <h3 class="project-title">RAG System - Chat with PDF Documents</h3>
 
             <p class="project-description">
-              Upload file PDF và đặt câu hỏi — AI sẽ trả lời dựa trên nội dung
-              tài liệu! Hệ thống
-              <strong>Retrieval-Augmented Generation (RAG)</strong> sử dụng
-              <strong>Qwen2.5:7b</strong> LLM chạy local qua Ollama, kết hợp với
-              <strong>FAISS vector database</strong> để tìm kiếm ngữ cảnh và
-              <strong>LangChain</strong> để tạo câu trả lời thông minh. Giao
-              diện <strong>Streamlit</strong> hiện đại với hỗ trợ song ngữ
-              Việt-Anh tự động.
+              Upload PDF files and ask questions — AI will answer based on
+              document content! The
+              <strong>Retrieval-Augmented Generation (RAG)</strong> system uses
+              <strong>Qwen2.5:7b</strong> LLM running locally via Ollama,
+              combined with <strong>FAISS vector database</strong> for context
+              search and <strong>LangChain</strong> to generate intelligent
+              answers. Modern <strong>Streamlit</strong> interface with
+              automatic Vietnamese-English bilingual support.
             </p>
 
             <div class="button-group">
@@ -197,12 +197,12 @@
                 <div class="tech-item">
                   <h5>Python 3.8+ & Streamlit</h5>
                   <p>
-                    <strong>Python</strong> là ngôn ngữ lập trình core cho ML/AI
-                    với ecosystem phong phú (NumPy, Pandas).
-                    <strong>Streamlit 1.41.1</strong> cung cấp web framework để
-                    build interactive UI chỉ với Python thuần - không cần
-                    HTML/CSS/JS. Session state management cho chat history, file
-                    upload widget cho PDF, và real-time streaming response từ
+                    <strong>Python</strong> is the core programming language for
+                    ML/AI with a rich ecosystem (NumPy, Pandas).
+                    <strong>Streamlit 1.41.1</strong> provides a web framework
+                    to build interactive UI with pure Python - no need for
+                    HTML/CSS/JS. Session state management for chat history, file
+                    upload widget for PDF, and real-time streaming response from
                     LLM.
                   </p>
                 </div>
@@ -210,12 +210,12 @@
                 <div class="tech-item">
                   <h5>LangChain 0.3.16</h5>
                   <p>
-                    Framework orchestration cho LLM applications. Sử dụng
-                    <strong>OllamaLLM wrapper</strong> để tích hợp Qwen2.5,
-                    <strong>RecursiveCharacterTextSplitter</strong> cho
-                    intelligent chunking (tôn trọng paragraph/sentence
-                    boundaries), <strong>RetrievalQA chain</strong> kết hợp
-                    retriever + LLM, và <strong>PromptTemplate</strong> cho
+                    Orchestration framework for LLM applications. Uses
+                    <strong>OllamaLLM wrapper</strong> to integrate Qwen2.5,
+                    <strong>RecursiveCharacterTextSplitter</strong> for
+                    intelligent chunking (respecting paragraph/sentence
+                    boundaries), <strong>RetrievalQA chain</strong> combining
+                    retriever + LLM, and <strong>PromptTemplate</strong> for
                     context injection + instruction engineering.
                   </p>
                 </div>
@@ -223,23 +223,23 @@
                 <div class="tech-item">
                   <h5>FAISS (Facebook AI Similarity Search)</h5>
                   <p>
-                    Vector database tối ưu cho similarity search với
-                    <strong>IndexFlatL2</strong> (exact L2 distance). Lưu trữ
-                    768-dim embeddings, search algorithm trả về top-k most
-                    similar vectors trong O(n) time. Serialization support cho
-                    persistent storage (save/load vector index). Xử lý được
-                    millions of vectors efficiently.
+                    Optimized vector database for similarity search with
+                    <strong>IndexFlatL2</strong> (exact L2 distance). Stores
+                    768-dim embeddings, search algorithm returns top-k most
+                    similar vectors in O(n) time. Serialization support for
+                    persistent storage (save/load vector index). Efficiently
+                    handles millions of vectors.
                   </p>
                 </div>
 
                 <div class="tech-item">
                   <h5>Ollama + Qwen2.5:7b</h5>
                   <p>
-                    <strong>Ollama</strong> là local LLM runtime (như Docker cho
-                    AI models) - download, run, manage models dễ dàng.
-                    <strong>Qwen2.5:7b</strong> (Alibaba Cloud) có 7 billion
-                    parameters, hỗ trợ multilingual (Vi/En), context window 32K
-                    tokens, instruction-tuned for chat/QA, và chạy hoàn toàn
+                    <strong>Ollama</strong> is a local LLM runtime (like Docker
+                    for AI models) - easily download, run, and manage models.
+                    <strong>Qwen2.5:7b</strong> (Alibaba Cloud) has 7 billion
+                    parameters, supports multilingual (Vi/En), 32K token context
+                    window, instruction-tuned for chat/QA, and runs completely
                     offline - zero API costs, complete data privacy.
                   </p>
                 </div>
@@ -247,25 +247,25 @@
                 <div class="tech-item">
                   <h5>HuggingFace + Sentence-Transformers</h5>
                   <p>
-                    <strong>HuggingFace</strong> cung cấp model hub với hàng
-                    nghìn pretrained models.
-                    <strong>Sentence-Transformers</strong> library tạo semantic
-                    embeddings - sử dụng
+                    <strong>HuggingFace</strong> provides a model hub with
+                    thousands of pretrained models.
+                    <strong>Sentence-Transformers</strong> library creates
+                    semantic embeddings - uses
                     <strong>paraphrase-multilingual-mpnet-base-v2</strong> model
-                    (50+ languages, 768 dimensions) để convert text thành dense
-                    vectors. Cosine similarity giữa vectors đo semantic meaning
-                    tương đương.
+                    (50+ languages, 768 dimensions) to convert text into dense
+                    vectors. Cosine similarity between vectors measures semantic
+                    meaning equivalence.
                   </p>
                 </div>
 
                 <div class="tech-item">
                   <h5>PDFPlumber</h5>
                   <p>
-                    Python library extract text từ PDF files với high accuracy.
-                    Parse PDF structure (text, tables, metadata), xử lý complex
-                    layouts, preserve formatting, và handle multi-page
-                    documents. Alternative cho PyPDF2/pdfminer với API đơn giản
-                    hơn và better text extraction quality.
+                    Python library to extract text from PDF files with high
+                    accuracy. Parses PDF structure (text, tables, metadata),
+                    handles complex layouts, preserves formatting, and handles
+                    multi-page documents. Alternative to PyPDF2/pdfminer with
+                    simpler API and better text extraction quality.
                   </p>
                 </div>
               </div>
@@ -273,13 +273,13 @@
               <h4>Why This Tech Stack?</h4>
               <p>
                 <strong>100% Local & Private:</strong> Ollama + Qwen2.5 = zero
-                cloud dependency, không gửi data ra external APIs (GDPR
-                compliant). <strong>Production-Ready:</strong> FAISS scaling đến
-                millions vectors, LangChain có robust error handling.
+                cloud dependency, no data sent to external APIs (GDPR
+                compliant). <strong>Production-Ready:</strong> FAISS scales to
+                millions of vectors, LangChain has robust error handling.
                 <strong>Multilingual:</strong> MPNet embeddings + Qwen2.5
-                support Vietnamese và English natively.
+                support Vietnamese and English natively.
                 <strong>Cost-Effective:</strong> One-time setup, zero API fees,
-                chạy unlimited queries.
+                run unlimited queries.
               </p>
             </div>
           </div>
